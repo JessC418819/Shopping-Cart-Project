@@ -99,7 +99,7 @@ Status: Not started
 # Module 5 code to go here
 
 """
-Module: 6 - Once user confirms transaction is complete, display all items
+Module: 6 - Print receipt file
 Purpose: 
 Developer: Nathan
 Tester: Adam
