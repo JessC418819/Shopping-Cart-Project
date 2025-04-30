@@ -48,3 +48,19 @@ print(priceDict)
 input("Which item would you like to buy? Type the item code here: ")
 input("How many would you like? Type here: ")
 #validation?
+
+#Adam code 
+
+#ben code 
+
+
+#Nathan Code 
+
+# receipt= open("finalreceipt.txt ", "x")
+# #This will create a text files called receipt 
+# receipt=write( veriable_of_receipt )
+# #This will type up the completed order in the text file. 
+# print (veriable_of_receipt)
+# #This will display the contents of the variable to the user in the conosole 
+# receipt.close()
+# #This will close the text files. 
