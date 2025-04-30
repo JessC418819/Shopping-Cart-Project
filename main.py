@@ -1,3 +1,10 @@
+"""
+Module: 1 - Create dictionary
+Developer: Jess
+Tester: Ben
+Status: Needs attention, see Ben's GH comments 30/04/2025
+"""
+
 #This code creates the key:value pairings for the 'itemDict', which, when displayed to the user offers all items available to purchase
 itemDict = {
   "001M": "Margarita Pizza",
@@ -44,23 +51,66 @@ priceDict = {
 #This code uses the 'print' function to display the dictionary on screen
 print(priceDict)
 
+"""
+Module: 2 - User inputs for item code and QTY
+Developer: Jess
+Tester: Ben
+Status: Needs attention, see Ben's GH comments
+"""
+
 #This code asks the user to select which item they would like to purchase and confirm the quantity
 input("Which item would you like to buy? Type the item code here: ")
 input("How many would you like? Type here: ")
 #validation?
 
-#Adam code 
+"""
+Module: 3 - Input validation to make sure the item code is input correctly and QTY is above 0
+Developer: Adam
+Tester: Nathan
+Status: Not started
+"""
 
-#ben code 
+# Module 3 code to go here
+# Module 3 code to go here
+# Module 3 code to go here
 
+"""
+Module: 4 - Give the option to add another item
+Purpose: 
+Developer: Ben
+Tester: Jess
+Status: Not started
+"""
 
-#Nathan Code 
+# Module 4 code to go here
+# Module 4 code to go here
+# Module 4 code to go here
 
-# receipt= open("finalreceipt.txt ", "x")
-# #This will create a text files called receipt 
-# receipt=write( veriable_of_receipt )
-# #This will type up the completed order in the text file. 
-# print (veriable_of_receipt)
-# #This will display the contents of the variable to the user in the conosole 
-# receipt.close()
-# #This will close the text files. 
+"""
+Module: 5 - Once user confirms transaction is complete, display all items
+Purpose: 
+Developer: Nathan
+Tester: Adam
+Status: Not started
+"""
+
+# Module 5 code to go here
+# Module 5 code to go here
+# Module 5 code to go here
+
+"""
+Module: 6 - Once user confirms transaction is complete, display all items
+Purpose: 
+Developer: Nathan
+Tester: Adam
+Status: In progress (under review by Adam)
+"""
+
+receipt= open("finalreceipt.txt ", "x")
+#This will create a text files called receipt 
+receipt=write( veriable_of_receipt )
+#This will type up the completed order in the text file. 
+print (veriable_of_receipt)
+#This will display the contents of the variable to the user in the conosole 
+receipt.close()
+#This will close the text files. 
