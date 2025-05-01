@@ -1,3 +1,7 @@
+from datetime import datetime        # Imports the datetime module
+today = datetime.now()               # Calls the now function, which gets the current time/date from the system clock --> 
+print(today)                         # Print statement to display time --> Nathan to move this line of code into module 6 once tested
+
 """
 Module: 1 - Create dictionary
 Developer: Jess
