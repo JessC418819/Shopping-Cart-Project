@@ -163,6 +163,22 @@ else:
 #A WHILE LOOP is required to continue this cycle of questioning until the user decides 'N' they don't wish to add any more items to their shopping cart
 
 
+#AMENDED USER INPUTS INC. WHILE LOOP AND NESTED IF ELSE SELECTION - JESS
+
+#Declare the List 'shoppingCart[]' but leave it empty to be called upon later after the user has chosen their items
+shoppingCart = []
+
+#The below WHILE LOOP asks the user to input the item code which corresponds to the product they wish to purchase. Followed by the nested IF ELSE selection statement gives the user the option to break out of the loop and go to their cart if they wish. If they choose not to, they will be asked to confirm the quantity of their chosen product
+while True:
+  itemCode = input("Enter the item code of the product you'd like to purchase here (CHECKOUT to go to cart): ")
+  if itemCode == "CHECKOUT" or itemCode == "checkout":
+    break
+  else:
+      quantity = int(input("How many would you like? Type here: "))
+
+#Items chosen by the user need to be saved into the list 'shoppingCart' in order to be produced in receipt format later on
+
+
 """
 
 #This code asks the user to select which item they would like to purchase and confirm the quantity
