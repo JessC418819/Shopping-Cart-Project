@@ -1,7 +1,6 @@
 from datetime import datetime # Imports the datetime module (for receipt)
 
-# Tuple dictionary setup 
-# Jess/Ben: Complete/tested
+# Tuple dictionary setup | Jess/Ben: Complete/tested
 shoppingDict = {
   "001": ("Margarita Pizza", 10.00),
   "002": ("Pepperoni Pizza", 10.00),
