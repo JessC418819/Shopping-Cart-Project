@@ -44,6 +44,23 @@ while True: # Opens an infinite loop (it's always True)
     quantity = int(input("How many would you like? Type here: "))
     # Ben to insert quantity handling here (element 4)
 
+     # (This was more complicated than you might expect because I had to look up how to deal with what happens if you entered a string as well as entered the wrong quantity - Ben)
+     
+     if quantity.upper() == "CHECKOUT":
+        break
+
+     try:
+         quantity = int(quantity)
+         while quantity < 1:
+             print('Invalid quantity. Please enter at least 1 of the item you want or type "CHECKOUT" to finish.')
+             continue
+
+     except ValueError:
+         print('Invalid quantity. Please enter at least 1 of the item you want or type "CHECKOUT" to finish.')
+         continue 
+
+#Is doing everything inside one while block really the best method? I can't suggest anything better but it creates indentation issues further down the line with the 'quantity' variable - Ben
+
     selectedItem = shoppingDict[itemCode] # Gets item from dictionary (using the item code the user typed)
     shoppingCart.append((selectedItem[0], selectedItem[1], quantity))  # Populates the empty shopping cart list declared earlier
     print(f"{quantity} x {selectedItem[0]} added to shopping cart.") # Prints each item being added to the cart
