@@ -80,7 +80,7 @@ print(f"\nThe total amount is: £{total:.2f}\n") # Print total amount to console
 receipt.write(f"\nThe total amount is: £{total:.2f}\n") # Write total amount to file
 
 print(today.strftime("%d-%m-%Y %H:%M:%S")) # Print time to console
-receipt.write(today.strftime("%D-%m-%Y %H:%M:%S")) # Write time to file
+receipt.write(today.strftime("%d-%m-%Y %H:%M:%S")) # Write time to file
 receipt.close() # Close the text file
 
 
