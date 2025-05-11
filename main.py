@@ -79,9 +79,9 @@ for item in shoppingCart: # For loop to go through each item in the shoppingCart
 print(f"\nThe total amount is: £{total:.2f}\n") # Print total amount to console
 receipt.write(f"\nThe total amount is: £{total:.2f}\n") # Write total amount to file
 
-print(f"Time of order: {today}\n") # Print time to console
-receipt.write(f"\nTime of order: {today}\n") # Write time to file
-
+print(today.strftime("%d-%m-%Y %H:%M:%S")) # Print time to console
+receipt.write(today.strftime("%Y-%m-%d %H:%M:%S")) # Write time to file
 receipt.close() # Close the text file
+
 
 
