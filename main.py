@@ -65,15 +65,23 @@ while True: # Opens an infinite loop (it's always True)
     shoppingCart.append((selectedItem[0], selectedItem[1], quantity))  # Populates the empty shopping cart list declared earlier
     print(f"{quantity} x {selectedItem[0]} added to shopping cart.") # Prints each item being added to the cart
 
-# Receipt handling | Nathan/Adam: Nathan to complete when the above code is complete
-today = datetime.now() # Datetime variable setup for use in the receipt below, use: print(today)
+# Main Shopping loop | Complete nathan code and adam test 
+receipt = open("finalreceipt.txt", "wt") # Creates and opens the text file
+print("\nFinal Order Receipt:\n") # Prints the receipt header in the console 
+receipt.write("Final Order Receipt:\n\n") # Prints a the recipet header in to the text file.
+total = 0 # Sets total to zero to be updated in for loop below
+for item in shoppingCart: # For loop to go through each item in the shoppingCart
+    orderLine = item[1] * item[2] # Saves an order line total by working out price * qty
+    total = total + orderLine # Updates the total each loop with itself + price*qty total
+    print(f"{item[0]}(x{item[2]})                     £{orderLine:.2f}")            # Prints to terminal
+    receipt.write(f"{item[0]} (x{item[2]})                     £{orderLine:.2f}\n") # Write to file
 
-receipt= open("finalreceipt.txt ", "x")
-#This will create a text files called receipt 
-receipt=write( veriable_of_receipt )
-#This will type up the completed order in the text file. 
-print (veriable_of_receipt)
-#This will display the contents of the variable to the user in the conosole 
-receipt.close()
-#This will close the text files. 
+print(f"\nThe total amount is: £{total:.2f}\n") # Print total amount to console
+receipt.write(f"\nThe total amount is: £{total:.2f}\n") # Write total amount to file
+
+print(f"Time of order: {today}\n") # Print time to console
+receipt.write(f"\nTime of order: {today}\n") # Write time to file
+
+receipt.close() # Close the text file
+
 
