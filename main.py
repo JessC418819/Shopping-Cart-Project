@@ -33,7 +33,7 @@ shoppingCart = [] # Declare the List 'shoppingCart[]' but leave it empty to be c
 while True: # Opens an infinite loop (it's always True)
     itemCode = input('Enter the item code of the product you\'d like to purchase here (type "CHECKOUT" to finish): ') # Asks the user to input the item code or "checkout"
 
-    if itemCode == "CHECKOUT" or itemCode == "checkout": # Safely handles closure of the infinite loop
+    if itemCode.upper() == "CHECKOUT": # Safely handles closure of the infinite loop
         break # Breaks the loop
      # Nathan to insert checkout print statement here (element 5)
   
