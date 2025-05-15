@@ -23,7 +23,7 @@
 
 **Contributing**: We welcome contributions however please remember to credit the original authors, thank you.
 
-**Licence**: This program has been created with an open licence, free for personal and commerical use.
+**Licence**: This program has been created with an open licence, free for personal and commercial use.
 
 **Contact Information**: Forename Surname, email@email.com.
 
